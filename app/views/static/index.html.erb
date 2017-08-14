@@ -16,14 +16,14 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1>JENNA FRANCIS</h1>
+				<h1><%= image_tag('jenna_francis.png') %></h1>
 				<nav>
 					<ul>
 						<li><a href="#one">Work</a></li>
 						<li><a href="#two">About</a></li>
 						<li><a href="#work">Projects</a></li>
 						<li><%= link_to "Resume", asset_path('resume.pdf'), target: '_blank' %></li>
-						<li><a href="#">Blog</a></li>
+						<li><a href="https://jennafrancis.github.io/" target="_blank">Blog</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
@@ -83,16 +83,11 @@
 					<!-- Gallery  -->
 						<div class="gallery">
 							<article class="from-left">
-								<a href="https://move-that-body.herokuapp.com/" class=" image fit" target="_blank"><%= image_tag('move_logo_zoom.png') %></a>
+								<%#= link_to image_tag('tophop_logo_fitted.png'), url: 'https://demo-tophop.herokuapp.com/', class: 'fit', target: '_blank' %>
+								<a href="https://demo-tophop.herokuapp.com/" class="image fit" target="_blank"><%= image_tag('tophop_logo_fitted.png') %></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><%= image_tag('02.jpg') %></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><%= image_tag('03.jpg') %></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><%= image_tag('04.jpg') %></a>
+								<a href="https://move-that-body.herokuapp.com/" class="image fit" target="_blank"><%= image_tag('move_logo_zoom.png') %></a>
 							</article>
 						</div>
 
@@ -124,17 +119,17 @@
 
 				<!-- Icons -->
 					<ul class="actions">
-						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="https://github.com/jennafrancis" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/jenna-francis/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><%= link_to '<i class="icon fa-file-text-o"></i>'.html_safe, asset_path('resume.pdf'), target: '_blank' %></li>
+						<li><a href="https://jennafrancis.github.io/" class="icon fa-list" target="_blank"><span class="label">Blog</span></a></li>
+						<li><a href="#contact" class="icon fa-address-card-o" target="_blank"><span class="label">Contact</span></a></li>
+						<li><a href="https://github.com/jennafrancis/jenfrannie" class="icon fa-code" target="_blank"><span class="label">This site</span></a></li>
 					</ul>
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2017 J. Francis</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</footer>
